@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <header>
+        <div class="container">
+            <div class="logo">Nairab</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#entrega">Entrega</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#produtos" class="cta-button">Peça Agora</a>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Sabor que derrete na boca.</h1>
+            <p>Biscoitos amanteigados artesanais feitos com amor e carinho de vovó.</p>
+            <a href="#produtos" class="cta-button">Quero meus biscoitos</a>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <h2>Nossos Sabores</h2>
+            <div class="product-list">
+                <div class="product-item" data-name="Goiabinha" data-price="10.00">
+                    <img src="./images/goiabinha.png" alt="Biscoito de Goiabinha">
+                    <h3>Goiabinha</h3>
+                    <p>Delicados biscoitos com recheio de goiabada, um clássico que encanta.</p>
+                    <span class="price">R$ 10,00</span>
+                    <div class="quantity-control">
+                        <button class="remove-from-cart-button">-</button>
+                        <span class="quantity">0</span>
+                        <button class="add-to-cart-button">+</button>
+                    </div>
+                </div>
+                <div class="product-item" data-name="Leite Condensado" data-price="10.00">
+                    <img src="./images/leite-condensado.png" alt="Biscoito de Leite Condensado">
+                    <h3>Leite Condensado</h3>
+                    <p>Clássico e irresistível, com sabor adocicado de leite condensado.</p>
+                    <span class="price">R$ 10,00</span>
+                    <div class="quantity-control">
+                        <button class="remove-from-cart-button">-</button>
+                        <span class="quantity">0</span>
+                        <button class="add-to-cart-button">+</button>
+                    </div>
+                </div>
+                <div class="product-item" data-name="Flocos" data-price="10.00">
+                    <img src="./images/flocos.png" alt="Biscoito de Flocos">
+                    <h3>Flocos</h3>
+                    <p>Textura única com flocos de coco, para quem ama um toque tropical.</p>
+                    <span class="price">R$ 10,00</span>
+                    <div class="quantity-control">
+                        <button class="remove-from-cart-button">-</button>
+                        <span class="quantity">0</span>
+                        <button class="add-to-cart-button">+</button>
+                    </div>
+                </div>
+                <div class="product-item" data-name="Coco" data-price="10.00">
+                    <img src="./images/coco.png" alt="Biscoito de Coco">
+                    <h3>Coco</h3>
+                    <p>Exótico e saboroso, com coco ralado, uma explosão de sabor.</p>
+                    <span class="price">R$ 10,00</span>
+                    <div class="quantity-control">
+                        <button class="remove-from-cart-button">-</button>
+                        <span class="quantity">0</span>
+                        <button class="add-to-cart-button">+</button>
+                    </div>
+                </div>
+                <div class="product-item" data-name="Nata" data-price="10.00">
+                    <img src="./images/nata.png" alt="Biscoito de Nata">
+                    <h3>Nata</h3>
+                    <p>Suavidade e cremosidade em cada mordida, o preferido da vovó.</p>
+                    <span class="price">R$ 10,00</span>
+                    <div class="quantity-control">
+                        <button class="remove-from-cart-button">-</button>
+                        <span class="quantity">0</span>
+                        <button class="add-to-cart-button">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart-section">
+        <div class="container">
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                Total: <span id="total-value">R$ 0,00</span>
+            </div>
+            <form id="checkout-form">
+                <h3>Dados para Entrega</h3>
+                <input type="text" id="customer-name" placeholder="Seu Nome" required>
+                <input type="tel" id="customer-phone" placeholder="Telefone WhatsApp (XX) XXXXX-XXXX" required>
+                <input type="text" id="customer-address" placeholder="Endereço de Entrega" required>
+                <input type="text" id="customer-complement" placeholder="Complemento (apto, bloco, etc.)">
+                <textarea id="customer-notes" placeholder="Observações (ex: sem lactose, embalagem para presente)"></textarea>
+                <button type="submit" class="cta-button">Finalizar Pedido via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="entrega">
+        <div class="container">
+            <h2>Como Funciona a Entrega</h2>
+            <div class="delivery-steps">
+                <div class="step-item">
+                    <img src="./images/icon-pedido.png" alt="Ícone Pedido">
+                    <h3>Passo 1: Escolha seus sabores favoritos</h3>
+                    <p>Navegue pelo nosso catálogo e escolha os biscoitos que mais te encantam. Adicione ao carrinho e prepare-se para uma explosão de sabor!</p>
+                </div>
+                <div class="step-item">
+                    <img src="./images/icon-pedido.png" alt="Ícone Finalizar Pedido">
+                    <h3>Passo 2: Finalize o Pedido pelo Site</h3>
+                    <p>Preencha seus dados de entrega no carrinho e finalize seu pedido de forma rápida e segura. É super fácil!</p>
+                </div>
+                <div class="step-item">
+                    <img src="./images/icon-receber.png" alt="Ícone Receber Biscoitos">
+                    <h3>Passo 3: Receba seus Biscoitos em Casa</h3>
+                    <p>Seus biscoitos fresquinhos e feitos com carinho chegam direto na sua porta! Entregas às quartas, sextas e sábados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p>"Os biscoitos da Nairab são simplesmente maravilhosos! O de goiabinha é o meu favorito. Sabor de casa de vó!"</p>
+                    <span>- Maria S.</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Entrega rápida e biscoitos deliciosos. Recomendo muito! O de leite condensado é divino."</p>
+                    <span>- João P.</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Qualidade impecável e um carinho que se sente em cada mordida. A Nairab conquistou meu coração!"</p>
+                    <span>- Ana L.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container">
+            <p>Cachambi / Del Castilho / Pilares e região - RJ</p>
+            <div class="social-media">
+                https://wa.me/5521999999999
+                <a href="#" target="_blank"><img src="./images/icon-instagram.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="./images/icon-facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="js/script.js"></script>
+</html>
